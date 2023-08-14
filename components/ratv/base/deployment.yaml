@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: ratv
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-tytd-tenant/byoc-app-wdva/ratv@sha256:e2e6c4aec1a17a3f59bddcba008232c1e39793208484baf0cb24a93a2c745f7c
         name: my-java-quarkus
         ports:
         - containerPort: 8081
