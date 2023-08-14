@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: ratv
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-tytd-tenant/byoc-app-wdva/ratv@sha256:e2e6c4aec1a17a3f59bddcba008232c1e39793208484baf0cb24a93a2c745f7c
+        name: my-java-quarkus
+        resources: {}
+status: {}
